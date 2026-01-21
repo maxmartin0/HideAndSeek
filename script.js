@@ -43,6 +43,7 @@ function handleClick(x, y) {
     const y2 = y1 + BOX_SIZE;
 
     if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
+      alert("HIT: " + item.title);   // 👈 FORCE visible feedback
       showPopup(item);
       return;
     }
