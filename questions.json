@@ -1,0 +1,20 @@
+[
+  {
+    "box": [60, 90, 120, 150],
+    "rules": "Draw 3, Pick 1",
+    "title": "Matching",
+    "description": "Find a location icon that matches your card"
+  },
+  {
+    "box": [180, 90, 240, 150],
+    "rules": "Draw 3, Pick 1",
+    "title": "Measuring",
+    "description": "Measure distance to the nearest landmark"
+  },
+  {
+    "box": [300, 90, 360, 150],
+    "rules": "Draw 2, Pick 1",
+    "title": "Thermometer",
+    "description": "Estimate the temperature at your location"
+  }
+]
