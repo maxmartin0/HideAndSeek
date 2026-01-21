@@ -24,6 +24,13 @@ fetch("questions.json")
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+  ctx.strokeStyle = "red";
+  ctx.lineWidth = 2;
+  
+  for (const item of boxes) {
+    ctx.strokeRect(item.x, item.y, BOX_SIZE, BOX_SIZE);
+  }
+
 }
 
 // Popup
