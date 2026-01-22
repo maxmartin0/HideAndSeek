@@ -54,14 +54,6 @@ function tryDraw() {
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-
-  ctx.strokeStyle = "red";
-  ctx.lineWidth = 2;
-
-  for (let i = 0; i < boxes.length; i++) {
-    const item = boxes[i];
-    ctx.strokeRect(item.x, item.y, BOX_SIZE, BOX_SIZE);
-  }
 }
 
 // ---------- POPUP ----------
