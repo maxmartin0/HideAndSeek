@@ -1,65 +1,11 @@
 [
-  {
-    "x": 42,
-    "y": 111,
-    "rules": "Draw 3, Pick 1",
-    "title": "Compass",
-    "description": "Are you in the same NESW zone."
-  },
-  {
-    "x": 85,
-    "y": 111,
-    "rules": "Draw 3, Pick 1",
-    "title": "Park",
-    "description": "Have you got the same nearest park."
-  },
-  {
-    "x": 128,
-    "y": 111,
-    "rules": "Draw 3, Pick 1",
-    "title": "Region",
-    "description": "Have you got the same nearest religious place."
-  },
-  {
-    "x": 42,
-    "y": 154,
-    "rules": "Draw 3, Pick 1",
-    "title": "Shop",
-    "description": "Have you got the same nearest shop."
-  },
-  {
-    "x": 85,
-    "y": 154,
-    "rules": "Draw 3, Pick 1",
-    "title": "Zone",
-    "description": "Are you in the same area zone."
-  },
-  {
-    "x": 128,
-    "y": 154,
-    "rules": "Draw 3, Pick 1",
-    "title": "Road",
-    "description": "Have you got the same road shop."
-  },
-  {
-    "x": 42,
-    "y": 198,
-    "rules": "Draw 3, Pick 1",
-    "title": "Main Road",
-    "description": "Have you got the same nearest main road."
-  },
-  {
-    "x": 85,
-    "y": 198,
-    "rules": "Draw 3, Pick 1",
-    "title": "Home",
-    "description": "Have you got the same nearest home."
-  },
-  {
-    "x": 128,
-    "y": 198,
-    "rules": "Draw 4, Pick 2",
-    "title": "Custom",
-    "description": "Have you got the same nearest custom location."
-  }
+  { "x": 42, "y": 111, "rules": "Draw 3, Pick 1", "title": "Compass", "description": "Are you in the same NESW zone." },
+  { "x": 85, "y": 111, "rules": "Draw 3, Pick 1", "title": "Park", "description": "Have you got the same nearest park." },
+  { "x": 128, "y": 111, "rules": "Draw 3, Pick 1", "title": "Region", "description": "Have you got the same nearest religious place." },
+  { "x": 42, "y": 154, "rules": "Draw 3, Pick 1", "title": "Shop", "description": "Have you got the same nearest shop." },
+  { "x": 85, "y": 154, "rules": "Draw 3, Pick 1", "title": "Zone", "description": "Are you in the same area zone." },
+  { "x": 128, "y": 154, "rules": "Draw 3, Pick 1", "title": "Road", "description": "Have you got the same road shop." },
+  { "x": 42, "y": 198, "rules": "Draw 3, Pick 1", "title": "Main Road", "description": "Have you got the same nearest main road." },
+  { "x": 85, "y": 198, "rules": "Draw 3, Pick 1", "title": "Home", "description": "Have you got the same nearest home." },
+  { "x": 128, "y": 198, "rules": "Draw 4, Pick 2", "title": "Custom", "description": "Have you got the same nearest custom location." }
 ]
