@@ -3,7 +3,7 @@
     "x": 42,
     "y": 111,
     "rules": "Draw 3, Pick 1",
-    "title": "Compas",
+    "title": "Compass",
     "description": "Are you in the same NESW zone."
   },
   {
@@ -17,8 +17,9 @@
     "x": 128,
     "y": 111,
     "rules": "Draw 3, Pick 1",
-    "title": "Reigion",
+    "title": "Region",
     "description": "Have you got the same nearest religious place."
+  },
   {
     "x": 42,
     "y": 154,
@@ -61,5 +62,4 @@
     "title": "Custom",
     "description": "Have you got the same nearest custom location."
   }
-  
 ]
