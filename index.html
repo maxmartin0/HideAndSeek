@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Jet Lag Question Sheet</title>
   <style>
     body {
       display: flex;
       justify-content: center;
       margin-top: 20px;
+      font-family: Arial, sans-serif;
     }
+
     canvas {
       border: 1px solid black;
       touch-action: manipulation;
+    }
+
+    #popup {
+      display: none;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      border: 2px solid black;
+      padding: 15px;
+      width: 300px;
+      z-index: 10;
+    }
+
+    #popup button {
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
 
 <canvas id="board" width="900" height="300"></canvas>
+
+<div id="popup">
+  <h3 id="popup-title"></h3>
+  <p><strong id="popup-rules"></strong></p>
+  <p id="popup-description"></p>
+  <button onclick="closePopup()">Close</button>
+</div>
 
 <script src="script.js"></script>
 </body>
