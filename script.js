@@ -12,28 +12,36 @@ let boxes = [];
 let imageLoaded = false;
 let dataLoaded = false;
 
+// ---------- IMAGE ----------
+
 const image = new Image();
 image.src = "questions.png";
 
-// ---------- LOADERS ----------
-
-image.onload = () => {
+image.onload = function () {
   imageLoaded = true;
   tryDraw();
 };
 
-image.onerror = () => {
-  console.error("Failed to load questions.png");
+image.onerror = function () {
+  console.error("❌ Failed to load questions.png");
 };
 
+// ---------- DATA ----------
+
 fetch("questions.json")
-  .then(res => res.json())
-  .then(data => {
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
     boxes = data;
     dataLoaded = true;
     tryDraw();
   })
-  .catch(err => console.error("Failed to load questions.json", err));
+  .catch(function (err) {
+    console.error("❌ Failed to load questions.json", err);
+  });
+
+// ---------- DRAW CONTROL ----------
 
 function tryDraw() {
   if (imageLoaded && dataLoaded) {
@@ -47,11 +55,11 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 
-  // Debug hitboxes (keep for now)
   ctx.strokeStyle = "red";
   ctx.lineWidth = 2;
 
-  for (const item of boxes) {
+  for (let i = 0; i < boxes.length; i++) {
+    const item = boxes[i];
     ctx.strokeRect(item.x, item.y, BOX_SIZE, BOX_SIZE);
   }
 }
@@ -72,7 +80,9 @@ function closePopup() {
 // ---------- INPUT ----------
 
 function handleClick(x, y) {
-  for (const item of boxes) {
+  for (let i = 0; i < boxes.length; i++) {
+    const item = boxes[i];
+
     if (
       x >= item.x &&
       x <= item.x + BOX_SIZE &&
@@ -86,13 +96,13 @@ function handleClick(x, y) {
 }
 
 // Mouse
-canvas.addEventListener("click", e => {
+canvas.addEventListener("click", function (e) {
   const rect = canvas.getBoundingClientRect();
   handleClick(e.clientX - rect.left, e.clientY - rect.top);
 });
 
 // Touch
-canvas.addEventListener("touchstart", e => {
+canvas.addEventListener("touchstart", function (e) {
   e.preventDefault();
   const rect = canvas.getBoundingClientRect();
   const t = e.touches[0];
