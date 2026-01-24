@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <title>Jet Lag Question Sheet</title>
   <style>
+    :root {
+      --bg: #0F172A;
+      --primary: #3B82F6;
+      --secondary: #22D3EE;
+      --text: #E5E7EB;
+      --muted: #94A3B8;
+      --card: #020617;
+    }
+    
     body {
       display: flex;
       justify-content: center;
@@ -29,6 +38,15 @@
       width: 300px;
       z-index: 10;
     }
+    
+    .card {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
 
     #popup button {
       margin-top: 10px;
@@ -39,11 +57,10 @@
 
 <canvas id="board" width="900" height="300"></canvas>
 
-<div id="popup">
+<div id="card">
   <h3 id="popup-title"></h3>
   <p><strong id="popup-rules"></strong></p>
   <p id="popup-description"></p>
-  <button onclick="closePopup()">Close</button>
 </div>
 
 <script src="script.js"></script>
